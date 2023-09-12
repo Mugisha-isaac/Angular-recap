@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angula-starter';
+  pageHeader: string = 'Employee Details';
+
+  firstName: string = 'Tom';
+  lastName: string = 'Hopkins';
+
+   getFullName(): string {
+    return this.firstName + ' ' + this.lastName;
+   }
 }
