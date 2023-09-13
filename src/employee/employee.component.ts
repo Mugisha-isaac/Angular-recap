@@ -10,5 +10,12 @@ import {Component} from '@angular/core';
 export class employeeComponent{
   firstName: string = 'Mugisha';
   lastName: string = 'Isaac';
-  gender: number = 20;
+  age: number = 20;
+  gender: string = 'Male';
+  showDetails: boolean = true;
+
+ toggleDetails(): void{
+  this.showDetails = !this.showDetails
+ }
+
 }
