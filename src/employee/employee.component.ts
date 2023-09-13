@@ -12,7 +12,7 @@ export class employeeComponent{
   lastName: string = 'Isaac';
   age: number = 20;
   gender: string = 'Male';
-  showDetails: boolean = true;
+  showDetails: boolean = false;
 
  toggleDetails(): void{
   this.showDetails = !this.showDetails
