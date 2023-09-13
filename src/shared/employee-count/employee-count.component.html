@@ -2,17 +2,17 @@
   Show:
 </span>
 
-<input type="radio" name="options">
+<input type="radio" name="options" value="all" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioSelectionChange()">
 <span class="radioClass">
   {{"All(" + all +  ")"}}
 </span>
 
-<input type="radio" name="options">
+<input type="radio" name="options" value="male" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioSelectionChange()">
 <span class="radioClass">
   {{"Male("  + male +  ")"}}
 </span>
 
-<input type="radio" name="options">
+<input type="radio" name="options" value="female" [(ngModel)]="selectedRadioButtonValue" (change)="onRadioSelectionChange()">
 <span class="radioClass">
   {{"Female("  + female +  ")"}}
 </span>
