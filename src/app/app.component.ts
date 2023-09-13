@@ -3,11 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  // template: `
-  //           Name: <input [value]='Name' [(ngModel)] = 'Name' />
-  //           <br />
-  //           You entered: {{Name}}
-  // `,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
