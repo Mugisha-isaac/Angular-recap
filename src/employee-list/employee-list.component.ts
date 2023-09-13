@@ -10,6 +10,8 @@ export class EmployeeListComponent{
 
 employees: any = [];
 
+selectedEmployeeRadioButtonCount: string = 'all';
+
 constructor(){
   this.employees= [
     { code: 'emp101', name: 'Tom', gender: 'Male', annualSalary: 5500, dateOfBirth: '6/25/1988' },
@@ -32,6 +34,10 @@ getTotalMaleEmployees(): number{
 getTotalFemaleEmployees(): number{
   const femaleEmployees = this.employees.filter((employee: any)=>employee.gender === 'Female')
   return femaleEmployees.length;
+}
+
+onEmployeeCountRadioChange(selectedRadioButtonValue: string): void{
+  this.selectedEmployeeRadioButtonCount = selectedRadioButtonValue;
 }
 
 }
