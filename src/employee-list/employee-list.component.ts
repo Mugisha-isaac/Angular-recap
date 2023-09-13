@@ -19,4 +19,19 @@ constructor(){
     {code: 'emp105', name: 'Nancy', gender: 'Female', annualSalary: 6700.826,dateOfBirth: '12/15/1982' }
 ];
 }
+
+getTotalEmployeesCount(): number{
+  return this.employees.length;
+}
+
+getTotalMaleEmployees(): number{
+  const maleEmployees = this.employees.filter((employee:any)=> employee.gender === 'Male');
+  return maleEmployees.length;
+}
+
+getTotalFemaleEmployees(): number{
+  const femaleEmployees = this.employees.filter((employee: any)=>employee.gender === 'Female')
+  return femaleEmployees.length;
+}
+
 }
