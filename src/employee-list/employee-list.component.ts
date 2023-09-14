@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { IEmployee } from 'src/types/employee';
 
 @Component({
   selector: 'employee-list',
@@ -8,7 +9,7 @@ import {Component} from '@angular/core';
 
 export class EmployeeListComponent{
 
-employees: any = [];
+employees: IEmployee[] = [];
 
 selectedEmployeeRadioButtonCount: string = 'all';
 
@@ -38,6 +39,5 @@ getTotalFemaleEmployees(): number{
 
 onEmployeeCountRadioChange(selectedRadioButtonValue: any): void{
   this.selectedEmployeeRadioButtonCount = selectedRadioButtonValue;
-  console.log('selected value....', this.selectedEmployeeRadioButtonCount);
 }
 }
