@@ -2,7 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  // templateUrl: './app.component.html',
+  template: `
+      Your text: <input type="text" [(ngModel)] = 'userText'  />
+         <br/><br/>
+       <simple [simpleInput] = 'userText'></simple>
+
+  `,
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
@@ -12,6 +18,7 @@ export class AppComponent {
   lastName: string = 'Hopkins';
   isDisabled: boolean = true;
   Name: string = 'Tom';
+  userText: string = 'Pragim';
 
    getFullName(): string {
     return this.firstName + ' ' + this.lastName;
